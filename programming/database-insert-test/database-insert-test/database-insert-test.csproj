@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>database_insert_test</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BenchmarkDotNet" />
+    <None Remove="Postgres2Go.NetCore" />
+    <None Remove="Npgsql" />
+    <None Remove="CSVFile" />
+    <None Remove="Postgres2Go" />
+    <None Remove="System.Data.SqlClient" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.2" />
+    <PackageReference Include="Npgsql" Version="6.0.7" />
+    <PackageReference Include="CSVFile" Version="3.1.0" />
+    <PackageReference Include="Postgres2Go" Version="0.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\data\starbucks_addresses.csv">
+      <Link>starbucks_addresses.csv</Link>
+    </Content>
+  </ItemGroup>
+</Project>
