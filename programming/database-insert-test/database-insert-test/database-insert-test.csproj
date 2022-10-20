@@ -8,6 +8,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>DatabaseInsertTest</AssemblyName>
+  </PropertyGroup>
   <ItemGroup>
     <None Remove="BenchmarkDotNet" />
     <None Remove="Postgres2Go.NetCore" />
@@ -22,11 +26,6 @@
     <PackageReference Include="Npgsql" Version="6.0.7" />
     <PackageReference Include="CSVFile" Version="3.1.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
-    <PackageReference Include="Testcontainers" Version="2.1.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\..\..\data\starbucks_addresses.csv">
-      <Link>starbucks_addresses.csv</Link>
-    </Content>
+    <PackageReference Include="Testcontainers" Version="2.0.1" />
   </ItemGroup>
 </Project>

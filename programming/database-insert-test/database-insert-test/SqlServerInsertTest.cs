@@ -22,31 +22,32 @@ CREATE TABLE mailing_address (
         private static string INSERT_SQL = @"
 INSERT INTO mailing_address (line1, city, region, country, postalCode) VALUES (@line1, @city, @region, @country, @postalCode);";
 
+        private readonly TestcontainerDatabaseConfiguration configuration = new MsSqlTestcontainerConfiguration { Password = "yourStrong(!)Password" };
+
         [GlobalSetup]
-        public void SetupFunc()
+        public async Task SetupFunc()
         {
             try
             {
+                Console.WriteLine("Global setup for SQL");
                 _sqlserver = new TestcontainersBuilder<MsSqlTestcontainer>()
-                    .WithDatabase(new MsSqlTestcontainerConfiguration()
-                    {
-                        Database = "db",
-                        Username = "sqlserver",
-                        Password = "sqlserver",
-                    })
+                    .WithDatabase(configuration)
                     .Build();
+                await _sqlserver.StartAsync();
+                Console.WriteLine("Status is: " + _sqlserver.State.ToString());
                 _conn = new SqlConnection(_sqlserver.ConnectionString);
                 _conn.Open();
 
                 // Destruct and reconstruct the database if necessary
                 using (var cmd = new SqlCommand(CREATE_SQL, _conn))
                 {
-                    var version = cmd.ExecuteNonQuery();
-
-                    Console.WriteLine($"SqlServer version: {version}");
+                    await cmd.ExecuteNonQueryAsync();
                 }
-            } catch (Exception e)
+                Console.WriteLine("Finished global setup for SQL");
+            }
+            catch (Exception e)
             {
+                Console.WriteLine("Exception during global setup for SQL: " + e.Message);
                 Console.WriteLine(e.ToString());
             }
         }
@@ -76,6 +77,7 @@ INSERT INTO mailing_address (line1, city, region, country, postalCode) VALUES (@
         [GlobalCleanup]
         public async Task Cleanup()
         {
+            Console.WriteLine("Global cleanup for SQL");
             if (_conn != null)
             {
                 _conn.Close();
@@ -83,8 +85,10 @@ INSERT INTO mailing_address (line1, city, region, country, postalCode) VALUES (@
             }
             if (_sqlserver != null)
             {
+                await _sqlserver.StopAsync();
                 await _sqlserver.DisposeAsync();
             }
+            Console.WriteLine("Finished global cleanup for SQL");
         }
     }
 }

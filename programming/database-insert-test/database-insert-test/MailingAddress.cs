@@ -16,7 +16,7 @@ namespace database_insert_test
         {
             if (_addresses == null)
             {
-                var text = File.ReadAllText("starbucks_addresses.csv");
+                var text = File.ReadAllText("/Users/tedspence/github/data-analysis-class-resources/data/starbucks_addresses.csv");
                 _addresses = CSV.Deserialize<MailingAddress>(text).ToArray();
                 Console.WriteLine($"Read in {_addresses.Length} addresses");
             }
