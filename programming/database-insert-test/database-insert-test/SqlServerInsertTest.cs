@@ -22,34 +22,29 @@ CREATE TABLE mailing_address (
         private static string INSERT_SQL = @"
 INSERT INTO mailing_address (line1, city, region, country, postalCode) VALUES (@line1, @city, @region, @country, @postalCode);";
 
-        private readonly TestcontainerDatabaseConfiguration configuration = new MsSqlTestcontainerConfiguration { Password = "yourStrong(!)Password" };
-
         [GlobalSetup]
         public async Task SetupFunc()
         {
-            try
-            {
-                Console.WriteLine("Global setup for SQL");
-                _sqlserver = new TestcontainersBuilder<MsSqlTestcontainer>()
-                    .WithDatabase(configuration)
-                    .Build();
-                await _sqlserver.StartAsync();
-                Console.WriteLine("Status is: " + _sqlserver.State.ToString());
-                _conn = new SqlConnection(_sqlserver.ConnectionString);
-                _conn.Open();
+            Console.WriteLine("Global setup for SQL");
+            var configuration = new MsSqlTestcontainerConfiguration();
+            configuration.Password = "yourStrong(!)Password";
+            configuration.Port = 9959;
+            _sqlserver = new TestcontainersBuilder<MsSqlTestcontainer>()
+                .WithDatabase(configuration)
+                .WithHostname("172.20.0.1")
+                .WithExposedPort(9959)
+                .Build();
+            await _sqlserver.StartAsync();
+            Console.WriteLine("Status is: " + _sqlserver.State.ToString());
+            _conn = new SqlConnection(_sqlserver.ConnectionString);
+            _conn.Open();
 
-                // Destruct and reconstruct the database if necessary
-                using (var cmd = new SqlCommand(CREATE_SQL, _conn))
-                {
-                    await cmd.ExecuteNonQueryAsync();
-                }
-                Console.WriteLine("Finished global setup for SQL");
-            }
-            catch (Exception e)
+            // Destruct and reconstruct the database if necessary
+            using (var cmd = new SqlCommand(CREATE_SQL, _conn))
             {
-                Console.WriteLine("Exception during global setup for SQL: " + e.Message);
-                Console.WriteLine(e.ToString());
+                await cmd.ExecuteNonQueryAsync();
             }
+            Console.WriteLine("Finished global setup for SQL");
         }
 
         /// <summary>
