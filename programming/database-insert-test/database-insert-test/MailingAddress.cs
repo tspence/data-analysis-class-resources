@@ -12,7 +12,7 @@ namespace database_insert_test
         public string? PostalCode { get; set; }
 
         private static MailingAddress[]? _addresses;
-        private static MailingAddress[] GetAll()
+        public static MailingAddress[] GetAll()
         {
             if (_addresses == null)
             {

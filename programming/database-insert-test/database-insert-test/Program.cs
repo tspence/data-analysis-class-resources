@@ -12,7 +12,7 @@ namespace database_insert_test
             var config = new ManualConfig()
                 .WithOptions(ConfigOptions.DisableOptimizationsValidator)
                 .AddLogger(new ConsoleLogger());
-            var summary = BenchmarkRunner.Run<PostgresInsertTest>(config);
+            var summary = BenchmarkRunner.Run<SqlServerInsertTest>(config);
             Console.WriteLine($"Summary: {summary}");
         }
     }

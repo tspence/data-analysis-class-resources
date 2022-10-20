@@ -27,7 +27,7 @@ namespace database_insert_test
         {
             _conn = new NpgsqlConnection(_postgres.ConnectionString);
             _conn.Open();
-            using (var cmd = new NpgsqlCommand("CREATE TABLE  version()", _conn))
+            using (var cmd = new NpgsqlCommand("CREATE TABLE address ()", _conn))
             {
                 var version = cmd.ExecuteScalar() as string;
 
