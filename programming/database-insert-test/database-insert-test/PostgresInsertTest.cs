@@ -1,24 +1,31 @@
 ﻿using System;
 using BenchmarkDotNet.Attributes;
 using CSVFile;
+using DotNet.Testcontainers.Builders;
+using DotNet.Testcontainers.Configurations;
+using DotNet.Testcontainers.Containers;
 using Npgsql;
-using Postgres2Go;
 using Utilities;
 
 namespace database_insert_test
 {
     public class PostgresInsertTest
     {
-        private PostgresRunner? _runner;
         private NpgsqlConnection? _conn;
-        private MailingAddress[]? _addresses;
 
+        private readonly TestcontainerDatabase _postgres = new TestcontainersBuilder<PostgreSqlTestcontainer>()
+            .WithDatabase(new PostgreSqlTestcontainerConfiguration
+            {
+                Database = "db",
+                Username = "postgres",
+                Password = "postgres",
+            })
+            .Build();
 
         [GlobalSetup]
         public void Setup()
         {
-            _runner = PostgresRunner.Start();
-            _conn = new NpgsqlConnection(_runner.GetConnectionString());
+            _conn = new NpgsqlConnection(_postgres.ConnectionString);
             _conn.Open();
             using (var cmd = new NpgsqlCommand("CREATE TABLE  version()", _conn))
             {
@@ -28,9 +35,6 @@ namespace database_insert_test
             }
 
             // Read in the CSV addresses
-            var text = File.ReadAllText("starbucks_addresses.csv");
-            _addresses = CSV.Deserialize<MailingAddress>(text).ToArray();
-            Console.WriteLine($"Read in {_addresses.Length} addresses");
         }
 
         /// <summary>
@@ -55,10 +59,6 @@ namespace database_insert_test
             {
                 _conn.Close();
                 _conn.Dispose();
-            }
-            if (_runner != null)
-            {
-                _runner.Dispose();
             }
         }
     }
