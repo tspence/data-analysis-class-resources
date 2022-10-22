@@ -26,6 +26,8 @@
     <PackageReference Include="Npgsql" Version="6.0.7" />
     <PackageReference Include="CSVFile" Version="3.1.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
-    <PackageReference Include="Testcontainers" Version="2.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\testcontainers-dotnet\src\Testcontainers\Testcontainers.csproj" />
   </ItemGroup>
 </Project>

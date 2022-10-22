@@ -9,7 +9,7 @@ namespace database_insert_test
     public class SqlServerInsertTest
     {
         private SqlConnection? _conn;
-        private TestcontainerDatabase? _sqlserver;
+        private MsSqlTestcontainer? _sqlserver;
 
         private static string CREATE_SQL = @"
 CREATE TABLE mailing_address (
@@ -28,13 +28,15 @@ INSERT INTO mailing_address (line1, city, region, country, postalCode) VALUES (@
             Console.WriteLine("Global setup for SQL");
             var configuration = new MsSqlTestcontainerConfiguration();
             configuration.Password = "yourStrong(!)Password";
-            configuration.Port = 9959;
+            configuration.Port = 56789;
             _sqlserver = new TestcontainersBuilder<MsSqlTestcontainer>()
                 .WithDatabase(configuration)
-                .WithHostname("172.20.0.1")
-                .WithExposedPort(9959)
+                //.WithImage("mcr.microsoft.com/mssql/server:2022-latest")
+                //.WithCleanUp(true)
                 .Build();
+            Console.WriteLine($"Built config: {_sqlserver.Hostname}");
             await _sqlserver.StartAsync();
+            Console.WriteLine($"Started as: {_sqlserver.Hostname} {_sqlserver.IpAddress} {_sqlserver.Port}");
             Console.WriteLine("Status is: " + _sqlserver.State.ToString());
             _conn = new SqlConnection(_sqlserver.ConnectionString);
             _conn.Open();

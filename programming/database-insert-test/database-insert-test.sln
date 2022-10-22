@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1703.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "database-insert-test", "database-insert-test\database-insert-test.csproj", "{36E49C98-42AC-44B9-A5BF-6CC46B700B5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testcontainers", "..\..\..\testcontainers-dotnet\src\Testcontainers\Testcontainers.csproj", "{6B6FE033-7DEB-4BA1-B83E-BF387912A31D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{36E49C98-42AC-44B9-A5BF-6CC46B700B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36E49C98-42AC-44B9-A5BF-6CC46B700B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36E49C98-42AC-44B9-A5BF-6CC46B700B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B6FE033-7DEB-4BA1-B83E-BF387912A31D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6FE033-7DEB-4BA1-B83E-BF387912A31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6FE033-7DEB-4BA1-B83E-BF387912A31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6FE033-7DEB-4BA1-B83E-BF387912A31D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
