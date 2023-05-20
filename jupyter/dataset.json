@@ -1,0 +1,1041 @@
+{
+    "dataset": "KnutJaegersberg/IPTC-topic-classifier-labels",
+    "config": "KnutJaegersberg--IPTC-topic-classifier-labels",
+    "split": "train",
+    "features": [
+        {
+            "feature_idx": 0,
+            "name": "hlabel",
+            "type": {
+                "dtype": "string",
+                "_type": "Value"
+            }
+        },
+        {
+            "feature_idx": 1,
+            "name": "label_mid",
+            "type": {
+                "dtype": "string",
+                "_type": "Value"
+            }
+        },
+        {
+            "feature_idx": 2,
+            "name": "labeltext",
+            "type": {
+                "dtype": "string",
+                "_type": "Value"
+            }
+        },
+        {
+            "feature_idx": 3,
+            "name": "label",
+            "type": {
+                "dtype": "int64",
+                "_type": "Value"
+            }
+        }
+    ],
+    "rows": [
+        {
+            "row_idx": 0,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "judo",
+                "labeltext": "sport_judo",
+                "label": 132
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 1,
+            "row": {
+                "hlabel": "politics",
+                "label_mid": "interior policy",
+                "labeltext": "politics_interior policy",
+                "label": 77
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 2,
+            "row": {
+                "hlabel": "crime, law and justice",
+                "label_mid": "trials",
+                "labeltext": "crime, law and justice_trials",
+                "label": 21
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 3,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "curling",
+                "labeltext": "sport_curling",
+                "label": 118
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 4,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "rowing",
+                "labeltext": "sport_rowing",
+                "label": 143
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 5,
+            "row": {
+                "hlabel": "human interest",
+                "label_mid": "society",
+                "labeltext": "human interest_society",
+                "label": 64
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 6,
+            "row": {
+                "hlabel": "labour",
+                "label_mid": "wage and pension",
+                "labeltext": "labour_wage and pension",
+                "label": 67
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 7,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "luge",
+                "labeltext": "sport_luge",
+                "label": 134
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 8,
+            "row": {
+                "hlabel": "arts, culture and entertainment",
+                "label_mid": "monument and heritage site",
+                "labeltext": "arts, culture and entertainment_monument and heritage site",
+                "label": 7
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 9,
+            "row": {
+                "hlabel": "economy, business and finance",
+                "label_mid": "agriculture",
+                "labeltext": "economy, business and finance_agriculture",
+                "label": 27
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 10,
+            "row": {
+                "hlabel": "science and technology",
+                "label_mid": "natural science",
+                "labeltext": "science and technology_natural science",
+                "label": 95
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 11,
+            "row": {
+                "hlabel": "economy, business and finance",
+                "label_mid": "market and exchange",
+                "labeltext": "economy, business and finance_market and exchange",
+                "label": 40
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 12,
+            "row": {
+                "hlabel": "science and technology",
+                "label_mid": "human science",
+                "labeltext": "science and technology_human science",
+                "label": 94
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 13,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "water skiing",
+                "labeltext": "sport_water skiing",
+                "label": 157
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 14,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "triathlon",
+                "labeltext": "sport_triathlon",
+                "label": 155
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 15,
+            "row": {
+                "hlabel": "labour",
+                "label_mid": "collective contract",
+                "labeltext": "labour_collective contract",
+                "label": 65
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 16,
+            "row": {
+                "hlabel": "economy, business and finance",
+                "label_mid": "manufacturing and engineering",
+                "labeltext": "economy, business and finance_manufacturing and engineering",
+                "label": 39
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 17,
+            "row": {
+                "hlabel": "religion and belief",
+                "label_mid": "christianity",
+                "labeltext": "religion and belief_christianity",
+                "label": 84
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 18,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "alpine skiing",
+                "labeltext": "sport_alpine skiing",
+                "label": 106
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 19,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "biathlon",
+                "labeltext": "sport_biathlon",
+                "label": 112
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 20,
+            "row": {
+                "hlabel": "weather",
+                "label_mid": "report",
+                "labeltext": "weather_report",
+                "label": 166
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 21,
+            "row": {
+                "hlabel": "arts, culture and entertainment",
+                "label_mid": "mass media",
+                "labeltext": "arts, culture and entertainment_mass media",
+                "label": 6
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 22,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "power boating",
+                "labeltext": "sport_power boating",
+                "label": 141
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 23,
+            "row": {
+                "hlabel": "religion and belief",
+                "label_mid": "religious leader",
+                "labeltext": "religion and belief_religious leader",
+                "label": 89
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 24,
+            "row": {
+                "hlabel": "disaster and accident",
+                "label_mid": "emergency incident",
+                "labeltext": "disaster and accident_emergency incident",
+                "label": 23
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 25,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "gymnastics",
+                "labeltext": "sport_gymnastics",
+                "label": 128
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 26,
+            "row": {
+                "hlabel": "arts, culture and entertainment",
+                "label_mid": "fashion",
+                "labeltext": "arts, culture and entertainment_fashion",
+                "label": 4
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 27,
+            "row": {
+                "hlabel": "unrest, conflicts and war",
+                "label_mid": "guerrilla activity",
+                "labeltext": "unrest, conflicts and war_guerrilla activity",
+                "label": 163
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 28,
+            "row": {
+                "hlabel": "unrest, conflicts and war",
+                "label_mid": "war",
+                "labeltext": "unrest, conflicts and war_war",
+                "label": 165
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 29,
+            "row": {
+                "hlabel": "economy, business and finance",
+                "label_mid": "construction and property",
+                "labeltext": "economy, business and finance_construction and property",
+                "label": 32
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 30,
+            "row": {
+                "hlabel": "crime, law and justice",
+                "label_mid": "punishment",
+                "labeltext": "crime, law and justice_punishment",
+                "label": 20
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 31,
+            "row": {
+                "hlabel": "education",
+                "label_mid": "religious education",
+                "labeltext": "education_religious education",
+                "label": 46
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 32,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "aero and aviation sport",
+                "labeltext": "sport_aero and aviation sport",
+                "label": 105
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 33,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "windsurfing",
+                "labeltext": "sport_windsurfing",
+                "label": 159
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 34,
+            "row": {
+                "hlabel": "science and technology",
+                "label_mid": "research",
+                "labeltext": "science and technology_research",
+                "label": 96
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 35,
+            "row": {
+                "hlabel": "crime, law and justice",
+                "label_mid": "police",
+                "labeltext": "crime, law and justice_police",
+                "label": 18
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 36,
+            "row": {
+                "hlabel": "lifestyle and leisure",
+                "label_mid": "travel and commuting",
+                "labeltext": "lifestyle and leisure_travel and commuting",
+                "label": 71
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 37,
+            "row": {
+                "hlabel": "religion and belief",
+                "label_mid": "religious text",
+                "labeltext": "religion and belief_religious text",
+                "label": 90
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 38,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "Jai Alai (Pelota)",
+                "labeltext": "sport_Jai Alai (Pelota)",
+                "label": 131
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 39,
+            "row": {
+                "hlabel": "health",
+                "label_mid": "illness",
+                "labeltext": "health_illness",
+                "label": 57
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 40,
+            "row": {
+                "hlabel": "politics",
+                "label_mid": "parliament",
+                "labeltext": "politics_parliament",
+                "label": 78
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 41,
+            "row": {
+                "hlabel": "social issue",
+                "label_mid": "missing person",
+                "labeltext": "social issue_missing person",
+                "label": 102
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 42,
+            "row": {
+                "hlabel": "religion and belief",
+                "label_mid": "church (organisation)-DEPRECATED",
+                "labeltext": "religion and belief_church (organisation)-DEPRECATED",
+                "label": 85
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 43,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "rugby union",
+                "labeltext": "sport_rugby union",
+                "label": 144
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 44,
+            "row": {
+                "hlabel": "environmental issue",
+                "label_mid": "nature",
+                "labeltext": "environmental issue_nature",
+                "label": 52
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 45,
+            "row": {
+                "hlabel": "religion and belief",
+                "label_mid": "values",
+                "labeltext": "religion and belief_values",
+                "label": 91
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 46,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "horse racing, harness racing",
+                "labeltext": "sport_horse racing, harness racing",
+                "label": 129
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 47,
+            "row": {
+                "hlabel": "politics",
+                "label_mid": "diplomacy",
+                "labeltext": "politics_diplomacy",
+                "label": 73
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 48,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "motor rallying",
+                "labeltext": "sport_motor rallying",
+                "label": 137
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 49,
+            "row": {
+                "hlabel": "arts, culture and entertainment",
+                "label_mid": "literature",
+                "labeltext": "arts, culture and entertainment_literature",
+                "label": 5
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 50,
+            "row": {
+                "hlabel": "environmental issue",
+                "label_mid": "conservation",
+                "labeltext": "environmental issue_conservation",
+                "label": 49
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 51,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "flying disc",
+                "labeltext": "sport_flying disc",
+                "label": 126
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 52,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "motor racing",
+                "labeltext": "sport_motor racing",
+                "label": 136
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 53,
+            "row": {
+                "hlabel": "social issue",
+                "label_mid": "euthanasia (also includes assisted suicide)",
+                "labeltext": "social issue_euthanasia (also includes assisted suicide)",
+                "label": 99
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 54,
+            "row": {
+                "hlabel": "arts, culture and entertainment",
+                "label_mid": "culture (general)",
+                "labeltext": "arts, culture and entertainment_culture (general)",
+                "label": 2
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 55,
+            "row": {
+                "hlabel": "economy, business and finance",
+                "label_mid": "economy (general)",
+                "labeltext": "economy, business and finance_economy (general)",
+                "label": 34
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 56,
+            "row": {
+                "hlabel": "arts, culture and entertainment",
+                "label_mid": "theatre",
+                "labeltext": "arts, culture and entertainment_theatre",
+                "label": 11
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 57,
+            "row": {
+                "hlabel": "politics",
+                "label_mid": "parties and movements",
+                "labeltext": "politics_parties and movements",
+                "label": 79
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 58,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "weightlifting",
+                "labeltext": "sport_weightlifting",
+                "label": 158
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 59,
+            "row": {
+                "hlabel": "religion and belief",
+                "label_mid": "religious event",
+                "labeltext": "religion and belief_religious event",
+                "label": 87
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 60,
+            "row": {
+                "hlabel": "arts, culture and entertainment",
+                "label_mid": "sculpture",
+                "labeltext": "arts, culture and entertainment_sculpture",
+                "label": 9
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 61,
+            "row": {
+                "hlabel": "economy, business and finance",
+                "label_mid": "consumer goods",
+                "labeltext": "economy, business and finance_consumer goods",
+                "label": 33
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 62,
+            "row": {
+                "hlabel": "unrest, conflicts and war",
+                "label_mid": "massacre",
+                "labeltext": "unrest, conflicts and war_massacre",
+                "label": 164
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 63,
+            "row": {
+                "hlabel": "religion and belief",
+                "label_mid": "religious festival or holiday",
+                "labeltext": "religion and belief_religious festival or holiday",
+                "label": 88
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 64,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "cycling",
+                "labeltext": "sport_cycling",
+                "label": 119
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 65,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "dog racing",
+                "labeltext": "sport_dog racing",
+                "label": 121
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 66,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "tennis",
+                "labeltext": "sport_tennis",
+                "label": 154
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 67,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "rodeo",
+                "labeltext": "sport_rodeo",
+                "label": 142
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 68,
+            "row": {
+                "hlabel": "education",
+                "label_mid": "school",
+                "labeltext": "education_school",
+                "label": 47
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 69,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "fencing",
+                "labeltext": "sport_fencing",
+                "label": 123
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 70,
+            "row": {
+                "hlabel": "politics",
+                "label_mid": "politics (general)",
+                "labeltext": "politics_politics (general)",
+                "label": 80
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 71,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "billiards, snooker and pool",
+                "labeltext": "sport_billiards, snooker and pool",
+                "label": 113
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 72,
+            "row": {
+                "hlabel": "arts, culture and entertainment",
+                "label_mid": "television",
+                "labeltext": "arts, culture and entertainment_television",
+                "label": 10
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 73,
+            "row": {
+                "hlabel": "health",
+                "label_mid": "preventative medicine",
+                "labeltext": "health_preventative medicine",
+                "label": 61
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 74,
+            "row": {
+                "hlabel": "health",
+                "label_mid": "healthcare policy",
+                "labeltext": "health_healthcare policy",
+                "label": 56
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 75,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "volleyball",
+                "labeltext": "sport_volleyball",
+                "label": 156
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 76,
+            "row": {
+                "hlabel": "human interest",
+                "label_mid": "people",
+                "labeltext": "human interest_people",
+                "label": 63
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 77,
+            "row": {
+                "hlabel": "politics",
+                "label_mid": "treaty and international organisation-DEPRECATED",
+                "labeltext": "politics_treaty and international organisation-DEPRECATED",
+                "label": 82
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 78,
+            "row": {
+                "hlabel": "crime, law and justice",
+                "label_mid": "prosecution",
+                "labeltext": "crime, law and justice_prosecution",
+                "label": 19
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 79,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "canoeing and kayaking",
+                "labeltext": "sport_canoeing and kayaking",
+                "label": 116
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 80,
+            "row": {
+                "hlabel": "science and technology",
+                "label_mid": "technology (general)",
+                "labeltext": "science and technology_technology (general)",
+                "label": 97
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 81,
+            "row": {
+                "hlabel": "politics",
+                "label_mid": "election",
+                "labeltext": "politics_election",
+                "label": 74
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 82,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "sports event",
+                "labeltext": "sport_sports event",
+                "label": 150
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 83,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "speed skating",
+                "labeltext": "sport_speed skating",
+                "label": 149
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 84,
+            "row": {
+                "hlabel": "disaster and accident",
+                "label_mid": "disaster (general)",
+                "labeltext": "disaster and accident_disaster (general)",
+                "label": 22
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 85,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "Taekwon-Do",
+                "labeltext": "sport_Taekwon-Do",
+                "label": 153
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 86,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "ice hockey",
+                "labeltext": "sport_ice hockey",
+                "label": 130
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 87,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "modern pentathlon",
+                "labeltext": "sport_modern pentathlon",
+                "label": 135
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 88,
+            "row": {
+                "hlabel": "religion and belief",
+                "label_mid": "belief (faith)",
+                "labeltext": "religion and belief_belief (faith)",
+                "label": 83
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 89,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "baseball",
+                "labeltext": "sport_baseball",
+                "label": 110
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 90,
+            "row": {
+                "hlabel": "labour",
+                "label_mid": "employment",
+                "labeltext": "labour_employment",
+                "label": 66
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 91,
+            "row": {
+                "hlabel": "health",
+                "label_mid": "medical staff",
+                "labeltext": "health_medical staff",
+                "label": 59
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 92,
+            "row": {
+                "hlabel": "politics",
+                "label_mid": "foreign aid",
+                "labeltext": "politics_foreign aid",
+                "label": 75
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 93,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "field Hockey",
+                "labeltext": "sport_field Hockey",
+                "label": 124
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 94,
+            "row": {
+                "hlabel": "social issue",
+                "label_mid": "family",
+                "labeltext": "social issue_family",
+                "label": 100
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 95,
+            "row": {
+                "hlabel": "disaster and accident",
+                "label_mid": "industrial accident",
+                "labeltext": "disaster and accident_industrial accident",
+                "label": 24
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 96,
+            "row": {
+                "hlabel": "human interest",
+                "label_mid": "award and prize",
+                "labeltext": "human interest_award and prize",
+                "label": 62
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 97,
+            "row": {
+                "hlabel": "unrest, conflicts and war",
+                "label_mid": "conflict (general)",
+                "labeltext": "unrest, conflicts and war_conflict (general)",
+                "label": 162
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 98,
+            "row": {
+                "hlabel": "lifestyle and leisure",
+                "label_mid": "gastronomy",
+                "labeltext": "lifestyle and leisure_gastronomy",
+                "label": 69
+            },
+            "truncated_cells": []
+        },
+        {
+            "row_idx": 99,
+            "row": {
+                "hlabel": "sport",
+                "label_mid": "swimming",
+                "labeltext": "sport_swimming",
+                "label": 152
+            },
+            "truncated_cells": []
+        }
+    ]
+}
