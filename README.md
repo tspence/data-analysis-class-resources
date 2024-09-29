@@ -9,6 +9,7 @@ This GitHub repository contains a collection of tips and tricks for working with
 * [Basics of Plotting](https://github.com/tspence/data-analysis-class-resources/blob/main/jupyter/Basics%20of%20Plotting.ipynb) - Some basic ways to use matplotlib and pandas to chart certain types of graphs.  This is a very basic tutorial - there's lots of advanced graphing lessons you can find online to build on these ideas!
 * [Basics of Storing Data](https://github.com/tspence/data-analysis-class-resources/blob/main/jupyter/Basics%20of%20Storing%20Data.ipynb) - How to store information into MongoDB using single inserts, multiple inserts, and batches.
 * [Basics of Web Scraping](https://github.com/tspence/data-analysis-class-resources/blob/main/jupyter/Basics%20of%20Web%20Scraping.ipynb) - An example of how to fetch a web page using urllib3, how to fetch multiple pages in a range, and how to search within that page using regular expressions.  Also includes some examples of how to format output and how to display thumbnails within a Jupyter notebook using Pandas dataframes.
+* [Web Scraping with Selenium](https://github.com/tspence/data-analysis-class-resources/blob/main/jupyter/Selenium%20Scraping%20with%20Jupyter.ipynb) - An example of how to fetch a web page and retrieve elements in it using Selenium, which can be used to scrape data from webpages that require the use of JavaScript to load properly.
 
 ## Example Applications
 
